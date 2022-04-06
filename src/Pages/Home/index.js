@@ -93,6 +93,8 @@ export default function Home() {
 	return (
 		<>
 			<div className="all">
+				<div>OLA{process.env.REACT_APP_ROUTE}</div>
+
 				{loading == true ? (
 					<div id="loading">
 						<CircularProgress />

@@ -107,7 +107,6 @@ export default function User() {
 
 	return (
 		<div className="user">
-			<div>OLA{process.env.REACT_APP_ROUTE}</div>
 			{loading == true && adm == true ? (
 				<div id="loading">
 					<CircularProgress />
