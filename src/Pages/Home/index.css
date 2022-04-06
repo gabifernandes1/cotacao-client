@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Medium:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Light:wght@300&display=swap');
+.all {
+	min-height: 100vh;
+	background-color: rgb(184, 244, 248);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	display: flex;
+}
+.all .titulo-geral {
+	min-width: 400px;
+	width: 20vw;
+	height: 9vh;
+	border-radius: 28px 28px 0% 0%;
+	color: white;
+	margin-bottom: -4.5vh;
+	background-color: rgb(11, 111, 121);
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	font-size: 1.3rem;
+	min-width: 456px;
+	min-height: 40px;
+}
+.all .center {
+	height: 100%;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	width: 22vw;
+	min-width: 376px;
+	min-height: 562px;
+	padding: 40px 40px 40px 40px;
+	overflow: auto;
+}
+.all .title {
+	font-family: 'IBM Plex Sans', sans-serif;
+	padding-bottom: 30px;
+	font-size: 1.3rem;
+}
+.all .question {
+	font-family: 'IBM Plex Sans Light', sans-serif;
+	font-size: 1.05rem;
+	padding-bottom: 20px;
+}
+.all .input-text {
+	width: 100%;
+	margin-bottom: 2vh;
+}
+.all .input-text-next {
+	width: 100%;
+	margin-bottom: 2vh;
+}
+.all .asterisco {
+	color: red;
+}
+.all .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+	padding: 18px 14px !important;
+	height: 1rem !important;
+}
+.all .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+	border-radius: 20px !important;
+}
+.all #next {
+	display: flex;
+	justify-content: space-between;
+	width: 100% !important;
+}
+.all #next-box1 {
+	width: 50% !important;
+	padding-right: 20px;
+}
+.all #next-box2 {
+	width: 50% !important;
+	padding-right: 20px;
+}
+.all .css-dmmspl-MuiFormGroup-root {
+	flex-direction: row !important;
+}
+.all #buttons {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	align-items: center;
+}
+.all #add-info {
+	font-family: 'IBM Plex Sans Light', sans-serif !important;
+	color: black;
+	text-decoration: underline;
+	letter-spacing: 0.2px;
+	display: flex;
+	justify-content: center !important;
+	align-items: center;
+	width: 70% !important;
+}
+.all #add-info2 {
+	font-family: 'IBM Plex Sans', sans-serif !important;
+	color: black;
+	text-decoration: underline;
+	letter-spacing: 0.2px;
+	display: flex;
+	justify-content: center !important;
+	align-items: center;
+	width: 70% !important;
+}
+.all #add-info:hover {
+	font-weight: 700;
+	font-family: 'IBM Plex Sans Medium', sans-serif !important;
+	cursor: pointer;
+}
+.all #add-info2:hover {
+	cursor: pointer;
+	font-family: 'IBM Plex Sans Medium', sans-serif !important;
+}
+
+.all .css-sghohy-MuiButtonBase-root-MuiButton-root {
+	width: 40%;
+	margin-left: 60px !important;
+	height: 5vh;
+	background-color: rgb(149, 235, 243) !important;
+	color: black !important;
+	font-family: 'IBM Plex Sans Medium', sans-serif !important;
+	min-width: 20px !important;
+	font-size: 1rem !important;
+	/* border-radius: 3px !important; */
+}
+.all .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+	background-color: rgb(106, 193, 199) !important;
+}
+.all .campo {
+	padding-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 0.8rem;
+	color: gray;
+	font-family: 'IBM Plex Sans Light', sans-serif;
+}
+.all .add-info {
+	color: white;
+	background-color: rgb(16, 98, 110);
+	padding: 40px 60px 40px 40px;
+	margin-bottom: -11vh;
+	width: 17vw;
+	min-width: 300px;
+	height: 65vh;
+	border-radius: 25px 0px 0px 25px;
+	margin-right: -1vw;
+
+	overflow: auto;
+}
+.add-info .css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+	color: white !important;
+}
+.add-info
+	.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+	color: white !important;
+}
+
+.add-info .selector {
+	padding-bottom: 20px;
+}
+.all .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+	padding: 11px 20px !important;
+}
+.add-info .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	border: 1px solid white !important;
+	color: white !important;
+}
+
+.add-info .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+	color: white !important;
+}
+.all .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+	border-radius: 10px;
+}
+.add-info .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+	margin-bottom: 2vh;
+}
+#titulo-info-ads {
+	display: flex;
+}
+#x {
+	color: red;
+	font-size: 1.2rem;
+	margin-top: -1vh;
+	margin-left: -1vw;
+	color: white;
+	width: fit-content;
+	background-color: rgb(14, 123, 133);
+	width: fit-content;
+	height: 20px;
+	width: 20px;
+	font-size: 1rem;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1px;
+	margin-bottom: 20px;
+	font-family: 'IBM Plex Sans Light', sans-serif !important;
+	font-weight: 100;
+}
+#x div {
+}
+#x:hover {
+	font-family: 'IBM Plex Sans Light', sans-serif !important;
+	cursor: pointer;
+	color: gray;
+}
+.all .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+	height: 92px !important;
+	color: white;
+	overflow: auto !important ;
+}
+.all .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+	height: fit-content;
+	min-height: 10vh;
+	min-width: 200px;
+}
+.all .titulo-ads {
+	background-color: turquoise;
+	border-radius: 10px 10px 0% 0%;
+	margin-bottom: -2.5vh;
+	min-height: 40px;
+	display: flex;
+	height: 6vh;
+	padding-bottom: 20px;
+	font-size: 1.1.rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.all .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+	width: 100% !important;
+}
+.all #loading {
+	position: absolute;
+}
+.all .css-18lrjg1-MuiCircularProgress-root {
+	width: 100px !important;
+	height: 100px !important;
+}
