@@ -392,10 +392,15 @@
 	top: 10px;
 }
 
-.email .MuiFormControl-root {
-	width: 15vw;
+.login .MuiFormControl-root {
+	width: 15vw !important;
 }
-
-.senha .MuiFormControl-root {
-	width: 15vw;
+.login .css-i44wyl {
+	width: 15vw !important;
+}
+.login .MuiTextField-root {
+	width: 15vw !important;
+}
+.login .input-text {
+	width: 15vw !important;
 }
