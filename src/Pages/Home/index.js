@@ -31,7 +31,7 @@ export default function Home() {
 	const [pref, setPref] = useState('');
 	const [qt, setQt] = useState('');
 	const [planoantigo, setplanoantigo] = useState('');
-	const [CNPJ, setCNPJ] = useState('');
+	const [CNPJ, setCNPJ] = useState();
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
@@ -78,13 +78,14 @@ export default function Home() {
 			setEmail('');
 			setEstado('');
 			setCidade('');
-			setCNPJ('');
+			setCNPJ();
 			setQt('');
 			setPref('');
 			setObs('');
 			setplanoantigo('');
 			setMotivo('');
 			setLoading(false);
+			setNewPlan();
 		} else {
 			alert('Preencha os campos obrigatórios');
 			setLoading(false);
@@ -143,8 +144,8 @@ export default function Home() {
 							<FormControl className="selector">
 								<RadioGroup
 									aria-labelledby="demo-radio-buttons-group-label"
-									defaultValue="female"
 									name="radio-buttons-group"
+									value={NewPlan}
 									onChange={(e) => setNewPlan(e.target.value)}
 								>
 									<FormControlLabel
