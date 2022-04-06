@@ -404,3 +404,9 @@
 .login .input-text {
 	width: 15vw !important;
 }
+.email {
+	width: 15vw !important;
+}
+.senha {
+	width: 15vw !important;
+}
