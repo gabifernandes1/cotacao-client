@@ -31,7 +31,7 @@ export default function Home() {
 	const [pref, setPref] = useState('');
 	const [qt, setQt] = useState('');
 	const [planoantigo, setplanoantigo] = useState('');
-	const [CNPJ, setCNPJ] = useState();
+	const [CNPJ, setCNPJ] = useState('');
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
@@ -79,13 +79,13 @@ export default function Home() {
 			setEstado('');
 			setCidade('');
 			setCNPJ();
+			setNewPlan();
 			setQt('');
 			setPref('');
 			setObs('');
 			setplanoantigo('');
 			setMotivo('');
 			setLoading(false);
-			setNewPlan();
 		} else {
 			alert('Preencha os campos obrigatórios');
 			setLoading(false);
@@ -271,12 +271,12 @@ export default function Home() {
 							)}
 						</div>
 						<div className="question">Possui CNPJ?</div>
-						<FormControl>
+						<FormControl className="selector">
 							<RadioGroup
 								aria-labelledby="demo-radio-buttons-group-label"
 								name="radio-buttons-group"
-								onChange={(e) => setCNPJ(e.target.value)}
 								value={CNPJ}
+								onChange={(e) => setCNPJ(e.target.value)}
 							>
 								<FormControlLabel value="Sim" control={<Radio />} label="Sim" />
 								<FormControlLabel value="Não" control={<Radio />} label="Não" />
