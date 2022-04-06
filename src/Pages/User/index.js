@@ -2,7 +2,7 @@ import React, { useEffect, useReducer, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom'; // import do hook
 import * as XLSX from 'xlsx';
 
-import './index.css';
+import '../index.css';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios';
@@ -325,7 +325,7 @@ export default function User() {
 						clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
 						buttonText="Login"
 						onSuccess={() => setadm(true)}
-						onFailure={responseGoogle}
+						onFailure={() => console.log('erro')}
 						cookiePolicy={'single_host_origin'}
 						clientId={clientId}
 					/>

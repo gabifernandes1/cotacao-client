@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // import do hook
 
-import './index.css';
+import '../index.css';
 import TextField from '@mui/material/TextField';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
@@ -87,6 +87,7 @@ export default function Home() {
 			setLoading(false);
 		} else {
 			alert('Preencha os campos obrigatórios');
+			setLoading(false);
 		}
 	}
 

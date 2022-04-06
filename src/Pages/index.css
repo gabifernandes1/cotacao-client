@@ -243,3 +243,143 @@
 	width: 100px !important;
 	height: 100px !important;
 }
+.user td {
+	padding: 10px;
+	/* border: 0.8px solid rgb(207, 207, 207); */
+	/* background-color: white; */
+}
+.lines {
+	/* display: grid; */
+	/* grid-template-columns: fit-content; */
+}
+.user #table {
+	max-height: 100px !important;
+	/* padding: 5vh 0 0 2vw; */
+	width: fit-content;
+	/* border: 10px solid red; */
+	height: 70vh;
+}
+.user #tabela {
+	height: 85vh !important;
+	margin-top: 10vh;
+	overflow: auto;
+}
+.user {
+	overflow: auto;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(169, 224, 255);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login {
+	height: 50%;
+	width: 20%;
+	min-width: 400px;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 0 0 10px rgb(158, 158, 158);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.space {
+	padding-bottom: 3vh;
+}
+.login .title {
+	font-family: 'IBM Plex Sans Medium', sans-serif;
+	font-size: 1.3rem;
+}
+.header-table {
+	font-family: 'IBM Plex Sans Medium', sans-serif;
+	background-color: rgb(3, 109, 128) !important;
+	color: white;
+	align-items: center;
+}
+
+.barra-de-navegacao {
+	position: absolute;
+
+	top: 0;
+	padding: 30px;
+	height: 5vh;
+	width: 20vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+.barra-de-downloads {
+	position: absolute;
+
+	bottom: 0;
+	padding: 30px;
+	height: 5vh;
+	width: 20vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+.user .icon {
+	/* border: 1px solid red; */
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	opacity: 70%;
+}
+.user .icon .css-i4bv87-MuiSvgIcon-root {
+	height: 50px;
+	width: 50px;
+}
+.user .icon .css-i4bv87-MuiSvgIcon-root:hover {
+	height: 55px;
+	width: 55px;
+	cursor: pointer;
+}
+
+.user #loading {
+	padding-bottom: 20px !important;
+}
+.export-button {
+	border: 5px solid white !important;
+	position: absolute;
+	bottom: 2vh;
+	right: 2vw;
+	height: 65px;
+	width: 65px;
+	border-radius: 50px;
+	background-image: url('../images/download-arrow.png');
+	background-repeat: no-repeat;
+	background-color: #3e5cae;
+	background-position: center;
+	background-size: 30px;
+	cursor: pointer;
+}
+.export-button:hover {
+	background-color: white;
+	background-image: url('../images/download-arrow2.png');
+}
+
+#no-color {
+	color: transparent;
+	font-size: 0rem;
+}
+#obs {
+	overflow: auto;
+	max-width: 5vw;
+	/* height: 10px; */
+	max-height: 20px !important;
+}
+#obs #text {
+	color: red;
+}
+.lines {
+	background-color: white;
+}
