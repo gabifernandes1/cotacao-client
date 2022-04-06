@@ -10,6 +10,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
+import { Alert } from '@mui/material';
 
 import axios from 'axios';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -33,6 +34,8 @@ export default function Home() {
 	const [planoantigo, setplanoantigo] = useState('');
 	const [CNPJ, setCNPJ] = useState('');
 	const [loading, setLoading] = useState(false);
+	const [fail, setfail] = useState(false);
+	const [success, setsuccess] = useState(false);
 
 	useEffect(() => {
 		fetch('./estados-cidades.json', {
@@ -56,7 +59,7 @@ export default function Home() {
 
 	let numberInput = '(99) 99999-9999';
 
-	async function addClient(evt) {
+	async function addClient() {
 		setLoading(true);
 		if (nome && telefone && email) {
 			let objInput = {
@@ -86,8 +89,15 @@ export default function Home() {
 			setplanoantigo('');
 			setMotivo('');
 			setLoading(false);
+			setsuccess(true);
+			setTimeout(() => {
+				setsuccess(false);
+			}, 5000);
 		} else {
-			alert('Preencha os campos obrigatórios');
+			setfail(true);
+			setTimeout(() => {
+				setfail(false);
+			}, 5000);
 			setLoading(false);
 		}
 	}
@@ -102,6 +112,21 @@ export default function Home() {
 				) : (
 					''
 				)}
+				{fail == true ? (
+					<Alert variant="filled" severity="error">
+						Preencha todos os campos obrigatórios!
+					</Alert>
+				) : (
+					''
+				)}
+				{success == true ? (
+					<Alert variant="filled" severity="success">
+						Em até 2 dias úteis um corretor entrará em contato com você!
+					</Alert>
+				) : (
+					''
+				)}
+
 				{infoAd ? (
 					<div>
 						<div className="add-info">

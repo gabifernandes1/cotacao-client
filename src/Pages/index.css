@@ -381,3 +381,13 @@
 .lines {
 	background-color: white;
 }
+.all .css-1c3trtb-MuiPaper-root-MuiAlert-root {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+}
+.all .MuiAlert-filledSuccess {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+}
