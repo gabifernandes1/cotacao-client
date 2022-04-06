@@ -72,7 +72,7 @@ export default function Home() {
 				MOTIVO: Motivo,
 				OK: false,
 			};
-			await axios.post(process.env.REACT_APP_ROUTE, objInput);
+			await axios.post(`${process.env.REACT_APP_ROUTE}/add`, objInput);
 			setNome('');
 			setTelefone('');
 			setEmail('');
@@ -93,8 +93,6 @@ export default function Home() {
 	return (
 		<>
 			<div className="all">
-				<div>OLA{process.env.REACT_APP_ROUTE}</div>
-
 				{loading == true ? (
 					<div id="loading">
 						<CircularProgress />
