@@ -11,8 +11,6 @@
 	display: flex;
 }
 .all .titulo-geral {
-	min-width: 400px;
-	width: 20vw;
 	height: 9vh;
 	border-radius: 28px 28px 0% 0%;
 	color: white;
